@@ -1,7 +1,6 @@
-import random
-
-class RandomizedSet:
-
-    def __init__(self):
-        self.dict = {}
-        self.list = []
+def insert(self, val):
+        if val not in self.dict:
+            self.dict[val] = len(self.list)
+            self.list.append(val)
+            return True
+        return False
